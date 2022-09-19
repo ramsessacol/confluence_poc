@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "scrip_confluence"
+name = "confluence_poc"
 version = "0.1.0"
 description = ""
 authors = ["Ramses Almeida <ramses.almeida@pagar.me>"]
