@@ -9,6 +9,7 @@ url_confluence=json_stuff["confluence_url"]
 username_confluence=json_stuff["username_confluence"]
 espaco_confluence=json_stuff["espaco"]
 token_confluence=json_stuff["token"]
+titulo_maroto=json_stuff["titulo"]
 
 try:
     confluence = Confluence(url=url_confluence,username=username_confluence,password=token_confluence,cloud=True)
@@ -34,7 +35,7 @@ else:
     print("Opa, parece que tamo indo " + espaco_confluence + " Nome " + status["name"])
 
 print("########################################################################")
-tituloPagina =  "Algo Aleatorio"
+tituloPagina =  titulo_maroto
 status1= confluence.create_page(space=espaco_confluence, title=tituloPagina, \
              body='<strong>Acho que consegui</strong>!')
 if "id" in status1:
